@@ -6,7 +6,7 @@
     android:id="@+id/refreshingLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg2_black"
+    android:background="@drawable/bg2_blackest"
     android:orientation="vertical"
     tools:context=".StatusHistory">
 
@@ -125,77 +125,19 @@
 
             <TableLayout
                 android:id="@+id/myTableLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:stretchColumns="*">
 
                 <TableRow>
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
                         android:fontFamily="@font/quicksand"
-                        android:text="14/10/2018"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorTextHistory"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/quicksand"
-                        android:text="29.0"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorTextHistory"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/quicksand"
-                        android:text="20.0"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorTextHistory"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/quicksand"
-                        android:text="58.0"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorTextHistory"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/quicksand"
-                        android:text="44.0"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorTextHistory"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/quicksand"
-                        android:text="42.0"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorTextHistory"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/quicksand"
-                        android:text="6.09"
+                        android:gravity="center_vertical"
+                        android:text="Sem dados do servidor..."
                         android:textAlignment="center"
                         android:textColor="@color/colorTextHistory"
                         android:textSize="14sp"

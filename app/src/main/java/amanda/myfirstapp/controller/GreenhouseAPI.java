@@ -31,7 +31,6 @@ public class GreenhouseAPI {
     //private String IP = "192.168.56.1";
     private String IP = "192.168.1.107";
     //private String IP = "192.168.43.30";
-    //private String IP = "10.0.2.2";
     private final String URL = "http://"+IP+":8080/greenhousews-repo/webresources/greenhouse/";
     private final String TAG = HomeActivity.TAG;
 

@@ -6,7 +6,7 @@
     android:id="@+id/refreshingLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg2_black"
+    android:background="@drawable/bg2_blackest"
     android:orientation="vertical"
     tools:context=".HomeActivity">
 
@@ -38,9 +38,10 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
+                android:fontFamily="@font/quicksand"
                 android:text="@string/statusTitle"
                 android:textColor="@color/colorText"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <ImageButton
@@ -48,7 +49,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/lblStatus"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="2dp"
                 android:layout_alignParentRight="true"
                 android:background="@android:color/transparent"
                 android:onClick="onButtonClick"
@@ -221,6 +222,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical"
         android:textColor="@color/colorText">
 
@@ -232,9 +234,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:textColor="@color/colorText"
+            android:fontFamily="@font/quicksand"
             android:text="@string/actionsTitle"
             android:textAlignment="center"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
 
