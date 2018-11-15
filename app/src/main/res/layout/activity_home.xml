@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2_black"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/statusTitle"
+                android:textColor="@color/colorText"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnStatusHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/lblStatus"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:onClick="onButtonClick"
+                android:src="@android:drawable/ic_menu_recent_history" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblTempIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:text="@string/insideTemperature"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblTempInValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:text="@string/insideTemperatureValue"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblTempOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:text="@string/outsideTemperature"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblTempOutValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:text="@string/outsideTemperatureValue"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblUmidIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:text="@string/insideHumidity"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblUmidInValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:text="@string/insideHumidityValue"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblUmidOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:text="@string/outsideHumidity"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblUmidOutValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:text="@string/outsideHumidityValue"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblUmidSoil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:text="@string/soilHumidity"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblUmidSoilValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:text="@string/soilHumidityValue"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblPhSoil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:text="@string/soilPh"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblPhSoilValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:text="@string/soilPhValue"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:textColor="@color/colorText">
+
+        <TextView
+            android:id="@+id/lblActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorText"
+            android:text="@string/actionsTitle"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <Switch
+            android:id="@+id/switchLights"
+            android:theme="@style/SwitchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:onClick="onSwitchCheckedChanged"
+            android:text="@string/lightsSwitch"
+            android:textColor="@color/colorText"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/switchIrrigation"
+            android:theme="@style/SwitchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switchLights"
+            android:layout_alignEnd="@+id/switchLights"
+            android:layout_marginTop="5dp"
+            android:onClick="onSwitchCheckedChanged"
+            android:textColor="@color/colorText"
+            android:text="@string/irrigationSwitch"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/switchExaustor"
+            android:theme="@style/SwitchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switchIrrigation"
+            android:layout_alignEnd="@+id/switchLights"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorText"
+            android:onClick="onSwitchCheckedChanged"
+            android:text="@string/exaustSwitch"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

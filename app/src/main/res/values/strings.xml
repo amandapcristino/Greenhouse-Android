@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Greenhouse Management</string>
+    <string name="statusTitle">Status</string>
+    <string name="actionsTitle">Actions</string>
+
+    <string name="outsideTemperature">Temperatura Fora</string>
+    <string name="insideTemperature">Temperatura Dentro</string>
+    <string name="insideHumidity">Umidade Dentro</string>
+    <string name="outsideHumidity">Umidade Fora</string>
+    <string name="soilHumidity">Umidade do Solo</string>
+    <string name="soilPh">PH do Solo</string>
+
+    <string name="outsideTemperatureValue">--</string>
+    <string name="insideTemperatureValue">--</string>
+    <string name="insideHumidityValue">--</string>
+    <string name="outsideHumidityValue">--</string>
+    <string name="soilHumidityValue">--</string>
+    <string name="soilPhValue">--</string>
+
+    <string name="lightsSwitch">Luzes</string>
+    <string name="irrigationSwitch">Irrigação</string>
+    <string name="exaustSwitch">Exaustor</string>
+
+    <string name="historyTitle">Histórico de Status</string>
+    <string name="historyDate">Data</string>
+    <string name="historyCelsius">ºC</string>
+    <string name="historyPercentage">%</string>
+    <string name="historyPh">Ph</string>
+
+
+
+</resources>
