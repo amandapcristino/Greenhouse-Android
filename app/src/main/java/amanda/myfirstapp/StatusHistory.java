@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -48,10 +49,14 @@ public class StatusHistory extends AppCompatActivity {
     }
 
     public void createTable(List<Info> infoList) {
-        TableLayout ll = (TableLayout) findViewById(R.id.myTableLayout);
+        TableLayout ll = findViewById(R.id.myTableLayout);
         ll.removeAllViewsInLayout();
         ll.setStretchAllColumns(true);
 
+
+        int total_width = ll.getWidth();
+        int columns_size = total_width/8;
+/*
         TableRow rowHeader = new TableRow(this);
         TableRow.LayoutParams lph = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT);
         rowHeader.setLayoutParams(lph);
@@ -71,6 +76,14 @@ public class StatusHistory extends AppCompatActivity {
         tr4.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
         tr5.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
         tr6.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+
+        tr0.setWidth(columns_size*2);
+        tr1.setWidth(columns_size);
+        tr2.setWidth(columns_size);
+        tr3.setWidth(columns_size);
+        tr4.setWidth(columns_size);
+        tr5.setWidth(columns_size);
+        tr6.setWidth(columns_size);
 
         tr0.setTextSize(16);
         tr1.setTextSize(16);
@@ -114,7 +127,14 @@ public class StatusHistory extends AppCompatActivity {
 
         ll.addView(rowHeader, 0);
 
-        int i = 1;
+        NestedScrollView scroll = new NestedScrollView(this);
+        ll.addView(scroll,1);
+
+        TableLayout ll2 = new TableLayout(this);
+        ll2.setStretchAllColumns(true);
+        scroll.addView(ll2);*/
+
+        int i = 0; // if it has a header starts with 1
         for (Info info : infoList) {
             Log.i(TAG, "createTable: " + info.toString());
 
@@ -129,6 +149,14 @@ public class StatusHistory extends AppCompatActivity {
             TextView t4 = new TextView(this);
             TextView t5 = new TextView(this);
             TextView t6 = new TextView(this);
+/*
+            tr0.setWidth(columns_size*2);
+            tr1.setWidth(columns_size);
+            tr2.setWidth(columns_size);
+            tr3.setWidth(columns_size);
+            tr4.setWidth(columns_size);
+            tr5.setWidth(columns_size);
+            tr6.setWidth(columns_size);*/
 
             t0.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
             t1.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
