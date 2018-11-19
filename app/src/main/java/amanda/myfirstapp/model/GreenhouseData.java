@@ -1,7 +1,5 @@
 package amanda.myfirstapp.model;
 
-import amanda.myfirstapp.controller.GreenhouseAPI;
-
 public class GreenhouseData {
     Info info;
     Actions actions;

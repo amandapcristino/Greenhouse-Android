@@ -1,32 +1,41 @@
 <resources>
-    <string name="app_name">Greenhouse</string>
-    <string name="statusTitle">Status</string>
-    <string name="actionsTitle">Actions</string>
+    <string name="app_name">Gerenciamento de Estufa</string>
+    <string name="statusTitle">Informações</string>
+    <string name="actionsTitle">Configurações</string>
+    <string name="historyTitle">Histórico de Informações</string>
 
-    <string name="outsideTemperature">Temperatura Fora</string>
-    <string name="insideTemperature">Temperatura Dentro</string>
-    <string name="insideHumidity">Umidade Dentro</string>
-    <string name="outsideHumidity">Umidade Fora</string>
-    <string name="soilHumidity">Umidade do Solo</string>
-    <string name="soilPh">PH do Solo</string>
+    <!-- HOME ACTIVITY STRINGS-->
 
-    <string name="outsideTemperatureValue">--</string>
-    <string name="insideTemperatureValue">--</string>
-    <string name="insideHumidityValue">--</string>
-    <string name="outsideHumidityValue">--</string>
-    <string name="soilHumidityValue">--</string>
-    <string name="soilPhValue">--</string>
-
-    <string name="lightsSwitch">Luzes</string>
-    <string name="irrigationSwitch">Irrigação</string>
-    <string name="exaustSwitch">Exaustor</string>
-
-    <string name="historyTitle">Histórico de Status</string>
-    <string name="historyDate">Data</string>
-    <string name="historyCelsius">ºC</string>
-    <string name="historyPercentage">%</string>
-    <string name="historyPh">Ph</string>
+    <!-- Information Labels -->
+    <string name="strOutsideTemperature">Temperatura Fora</string>
+    <string name="strInsideTemperature">Temperatura Dentro</string>
+    <string name="strInsideHumidity">Umidade Dentro</string>
+    <string name="strOutsideHumidity">Umidade Fora</string>
+    <string name="strSoilHumidity">Umidade do Solo</string>
+    <string name="strSoilPh">PH do Solo</string>
+    <!-- Information Values -->
+    <string name="strOutsideTemperatureValue">--</string>
+    <string name="strInsideTemperatureValue">--</string>
+    <string name="strInsideHumidityValue">--</string>
+    <string name="strOutsideHumidityValue">--</string>
+    <string name="strSoilHumidityValue">--</string>
+    <string name="strSoilPhValue">--</string>
+    <!-- Switch Buttons Labels -->
+    <string name="strLightsSwitch">Luzes</string>
+    <string name="strIrrigationSwitch">Irrigação</string>
+    <string name="strExhaustSwitch">Exaustor</string>
 
 
+    <!-- HISTORY ACTIVITY STRINGS -->
+
+    <!-- Table Labels -->
+    <string name="strDateHeader">Data</string>
+    <string name="strInsideTemperatureHeader">InºC</string>
+    <string name="strOutsideTemperatureHeader">OutºC</string>
+    <string name="strInsideHumidityHeader">In%</string>
+    <string name="strOutsideHumidityHeader">Out%</string>
+    <string name="strSoilHumidityHeader">Soil%</string>
+    <string name="strSoilPhHeader">Ph</string>
+    <string name="strNoData">Sem dados do servidor...</string>
 
 </resources>
